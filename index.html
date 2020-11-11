@@ -5,66 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         body{
             margin: 0;
+            background-image: url(hotel.jpg);
+            background-repeat: no-repeat;
         }
+        nav{
+            width: 75%;
+    /* margin-left: 20%; */
+    background-color: #0000008a;
+    padding: 1px 15%;
+    margin: 0;
+}
+     
        
         ul{
-          width:75%;
-            list-style: none;
-            margin: auto;
-            background-image: url(download.jpg);
-            background-size: cover;
-            padding: 0px;
-            overflow: auto;
-            
+            list-style-type: none;
+    width: 75%;
+    /* margin-left: 188px; */
+    height: 50px;
+    margin: auto;
             
         }
        ul li{ 
-          
-           width:20%;
-            /* height: 30px; */
-            float:left;
-           text-align: center;
-            transition: 1s;
-            font-weight: bold;
-           
-
+      
+    
+    width: 150px;
+    float: left;
+    padding-top: 12px;
+      
        
-            
-           
-           
-         
+        }
+        ul li a::before{
+            content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: blue;
+    top: 18px;
+    margin-left: -20px;
+    transition: 1s;
         }
         ul li a{
             text-decoration: none;
             color: white;
-              height: 30px;
-              text-align: center;
-              vertical-align: middle;
-              line-height: 50px;
+           text-align: center;
+           font-size: 15px;
+           margin-top: 5px;
+           transition: 1s;
+           text-transform: capitalize;
               
         }
-        ul li:hover a {
-            color:black;
-            /* background-color: white; */
+        ul li:hover ::before{
+            width: 10px;
+    height: 10px;
+    background-color: goldenrod;
         }
-        ul li:hover{
-            color:black;
-            background-color: white;
+
+       
+        ul li:hover a{
+           
+    font-size: 17px;
+    text-decoration:underline;
+    color: goldenrod;
+          
+            
         }
 
     </style>
 </head>
 <body>
-   
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">The Team</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+   <nav><ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">find a hotel</a></li>
+    <li><a href="#">dinning</a></li>
+    <li><a href="#">banquet</a></li>
+    <li><a href="#">reach us</a></li>
+</ul></nav>
+        
 
 
     
